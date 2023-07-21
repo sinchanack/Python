@@ -14,7 +14,7 @@ plt.ylabel('n^2')
 plt.show()
 
 # 3. change figure size. plot red dots; set axis scales x: 0-6 and y: 0-20
-plt.figure(figsize=(1,5))	# 1 inch wide x 5 inches tall
+plt.figure(figsize=(5,0))	# 1 inch wide x 5 inches tall
 plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro')	# red-o
 plt.axis([0, 6, 0, 20])						# [xmin, xmax, ymin, ymax]
 plt.annotate('square it', (3,6))
@@ -22,8 +22,8 @@ plt.show()
 
 # 4. bar chart with four bars
 plt.clf()			# clear figure
-x = np.arange(4)
-y = [8.8, 5.2, 3.6, 5.9]
+r = np.arange(4)
+e = [8.8, 5.2, 3.6, 5.9]
 plt.xticks(x, ('Ankit', 'Hans', 'Joe', 'Flaco'))
 plt.bar(x, y)
 # plt.bar(x, y, color='y')
